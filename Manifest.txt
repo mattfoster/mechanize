@@ -84,6 +84,7 @@ test/htdocs/form_multi_select.html
 test/htdocs/form_multival.html
 test/htdocs/form_no_action.html
 test/htdocs/form_no_input_name.html
+test/htdocs/form_password.html
 test/htdocs/form_select.html
 test/htdocs/form_select_all.html
 test/htdocs/form_select_none.html
