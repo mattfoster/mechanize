@@ -29,6 +29,7 @@ class Net::HTTP
   SERVLETS = {
     '/gzip'                   => GzipServlet,
     '/form_post'              => FormTest,
+    '/password_form_post'     => FormTest,
     '/basic_auth'             => BasicAuthServlet,
     '/form post'              => FormTest,
     '/response_code'          => ResponseCodeTest,
