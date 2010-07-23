@@ -556,6 +556,17 @@ class FormsMechTest < Test::Unit::TestCase
     assert_equal(true, form.has_field?('intarweb'))
   end
 
+  def test_field_with_type
+    page = @agent.get("http://localhost/form_password.html")
+    form = page.forms.find { |f| f.name == "password_form" }
+    assert_not_nil(form)
+    
+    field = form.field_with(:type => 'password')
+    assert_not_nil(field)
+
+    assert_equal('password', field.name)
+  end
+
   def test_field_error
     @page = @agent.get('http://localhost/empty_form.html')
     form = @page.forms.first
